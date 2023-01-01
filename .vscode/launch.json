@@ -1,0 +1,36 @@
+{
+    "version": "0.0.1",
+    "configurations": [
+        {
+            "name": "launch MiniPathTracer (Debug)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/Debug-linux-x86_64/MiniPathTracer/MiniPathTracer",
+            "args": [],
+            "stopAtEntry": false,
+            "MIMode": "gdb",
+            "environment": [],
+            "externalConsole": false,
+            "cwd": "${workspaceFolder}",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build (debug)"
+        },
+        {
+            "name": "Debug MiniPathTracer (Windows)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/Debug-windows-x86_64/MiniPathTracer/MiniPathTracer.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "windows build (debug)"
+        }
+    ]
+}

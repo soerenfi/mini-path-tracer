@@ -1,4 +1,4 @@
-project "WalnutApp"
+project "MiniPathTracer"
    kind "ConsoleApp"
    language "C++"
    cppdialect "C++17"
@@ -24,7 +24,7 @@ project "WalnutApp"
    }
 
    targetdir ("../bin/" .. outputdir .. "/%{prj.name}")
-   objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
+   objdir ("../obj/" .. outputdir .. "/%{prj.name}")
 
    filter "system:windows"
       systemversion "latest"
